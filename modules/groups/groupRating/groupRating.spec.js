@@ -9,13 +9,13 @@ describe('GROUP RATING', () => {
   before('login as student and open Groups page from Home page', () => {
     LoginPage.login(student);
     Menu.groupLink.click();
-    browser.waitUntil(() => GroupsPage.h1.getText() === 'Groups', 500);
+    browser.waitUntil(() => GroupsPage.h1.getText() === 'Groups');
   });
 
   it('should click "Group4Test" link', () => {
     GroupsPage.group4TestLink.scrollIntoView();
     GroupsPage.group4TestLink.click();
-    browser.waitUntil(() => GroupRating.h1.getText() === 'Group Group4Test', 500);
+    browser.waitUntil(() => GroupRating.h1.getText() === 'Group Group4Test');
   });
 
   it('should click Rating link', () => {
