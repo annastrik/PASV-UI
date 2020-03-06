@@ -30,13 +30,13 @@ describe('CARDS TRAINING', () => {
   it('should click `Training` link', () => {
     FlashCardsPage.trainingLink.waitForDisplayed();
     FlashCardsPage.trainingLink.click();
-    browser.pause(300);
+    browser.pause(500);
   });
 
   it('should click `I Know` until StartTraining button is displayed and click on it', () => {
     while (!CardsTrainingPage.startTrainingBtn.isDisplayed()) {
         CardsTrainingPage.iKnowBtnClick();
-        browser.pause(500);
+        browser.pause(700);
       }
       CardsTrainingPage.startTrainingClick();
   });
@@ -69,7 +69,7 @@ describe('CARDS TRAINING', () => {
         Math.floor((100 / nrOfCards) * i).toString(),
       );
       CardsTrainingPage.iKnowBtnClick();
-      browser.pause(500);
+      browser.pause(700);
     }
   });
 
