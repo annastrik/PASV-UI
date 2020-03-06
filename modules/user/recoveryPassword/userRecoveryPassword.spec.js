@@ -24,7 +24,7 @@ describe('USER PASSWORD RECOVERY', () => {
   });
 
   it('should check if the button `Send password reset email` is displayed', () => {
-    ResetPasswordPage.submitBtn.waitForDisplayed(100);
+    ResetPasswordPage.submitBtn.waitForDisplayed();
   });
 
   it('should check if `Required` message is displayed for empty Email field', () => {
