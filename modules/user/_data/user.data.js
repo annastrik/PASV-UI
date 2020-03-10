@@ -8,6 +8,7 @@ const student = {
   password: '98765ytrewq$',
 };
 
-export { admin, student };
+
+module.exports = {admin, student};
 
 // This data is used by all education groups!!! Don't modify existing data!!!
