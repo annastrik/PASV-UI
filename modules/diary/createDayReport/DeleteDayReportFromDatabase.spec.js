@@ -48,4 +48,5 @@ describe('DELETE DAY REPORT', () => {
     expect(response.data.message).eq("Diary deleted");
     expect(response.data.success).true;
   });
+
 });
