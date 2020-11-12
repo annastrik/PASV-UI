@@ -5,8 +5,6 @@ import LoginPage from '../../user/_page/LoginPage';
 import { student } from '../../user/_data/user.data';
 import CardsTrainingPage from '../_page/CardsTrainingPage';
 
-// test test test
-
 let nrOfCards;
 
 describe('CARDS TRAINING', () => {
